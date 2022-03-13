@@ -2,7 +2,7 @@
 {{ config(materialized='table') }} 
 
 with Island_level_data as (
-select date,
+select date(Date),
 ISLAND,LOCATION_ISO_CODE,
 Avg(POPULATION) as POPULATION,
 sum(TOTAL_CASES) as TOTAL_CASES,

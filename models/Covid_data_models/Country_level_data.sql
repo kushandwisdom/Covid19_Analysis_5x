@@ -1,7 +1,7 @@
 {{ config(materialized='table') }} 
 
 with Country_level_data as (
-select date,
+select date(Date),
 Avg(POPULATION) as POPULATION,
 sum(TOTAL_CASES) as TOTAL_CASES,
 sum(TOTAL_ACTIVE_CASES) as TOTAL_ACTIVE_CASES ,
