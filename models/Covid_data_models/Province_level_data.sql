@@ -2,7 +2,7 @@
 {{ config(materialized='table') }} 
 
 with Province_level_data as (
-select date(Date),LOCATION,LOCATION_ISO_CODE,
+select date(Date) as Date,LOCATION,LOCATION_ISO_CODE,
 Avg(POPULATION) as POPULATION,
 sum(TOTAL_CASES) as TOTAL_CASES,
 sum(TOTAL_ACTIVE_CASES) as TOTAL_ACTIVE_CASES ,
