@@ -2,6 +2,7 @@
 
 with Country_level_data as (
 select date,
+Avg(POPULATION) as POPULATION,
 sum(TOTAL_CASES) as TOTAL_CASES,
 sum(TOTAL_ACTIVE_CASES) as TOTAL_ACTIVE_CASES ,
 sum(TOTAL_DEATHS) as TOTAL_DEATHS,
